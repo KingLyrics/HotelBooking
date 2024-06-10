@@ -29,6 +29,7 @@ struct HomePageView: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.gray.opacity(0.5), lineWidth: 1)
                         )
+                    
                 }
             }
         }
