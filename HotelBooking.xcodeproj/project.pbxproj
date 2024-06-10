@@ -20,6 +20,8 @@
 		A86ED5E62C172DD4009E7A96 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A86ED5DD2C172DD3009E7A96 /* Inter-Medium.ttf */; };
 		A86ED5E72C172DD4009E7A96 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A86ED5DE2C172DD4009E7A96 /* Inter-ExtraLight.ttf */; };
 		A86ED5E82C172DD4009E7A96 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A86ED5DF2C172DD4009E7A96 /* Inter-Regular.ttf */; };
+		A86ED5F02C1742D0009E7A96 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86ED5EF2C1742D0009E7A96 /* HomePageView.swift */; };
+		A86ED5F62C1744D7009E7A96 /* TextAndFontSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86ED5F52C1744D7009E7A96 /* TextAndFontSizeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		A86ED5DE2C172DD4009E7A96 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
 		A86ED5DF2C172DD4009E7A96 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		A86ED5E92C172EE7009E7A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A86ED5EF2C1742D0009E7A96 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		A86ED5F52C1744D7009E7A96 /* TextAndFontSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndFontSizeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +74,14 @@
 		A86ED5C52C172BDF009E7A96 /* HotelBooking */ = {
 			isa = PBXGroup;
 			children = (
-				A86ED5E92C172EE7009E7A96 /* Info.plist */,
-				A86ED5D62C172D2D009E7A96 /* Fonts */,
-				A86ED5C62C172BDF009E7A96 /* HotelBookingApp.swift */,
-				A86ED5C82C172BDF009E7A96 /* ContentView.swift */,
+				A86ED5EC2C174278009E7A96 /* App */,
 				A86ED5CA2C172BE0009E7A96 /* Assets.xcassets */,
+				A86ED5F32C174480009E7A96 /* Components */,
+				A86ED5D62C172D2D009E7A96 /* Fonts */,
+				A86ED5E92C172EE7009E7A96 /* Info.plist */,
 				A86ED5CC2C172BE0009E7A96 /* Preview Content */,
+				A86ED5ED2C174287009E7A96 /* Root */,
+				A86ED5EE2C174293009E7A96 /* Views */,
 			);
 			path = HotelBooking;
 			sourceTree = "<group>";
@@ -102,6 +108,38 @@
 				A86ED5D82C172DD3009E7A96 /* Inter-Thin.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A86ED5EC2C174278009E7A96 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A86ED5C62C172BDF009E7A96 /* HotelBookingApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A86ED5ED2C174287009E7A96 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A86ED5C82C172BDF009E7A96 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A86ED5EE2C174293009E7A96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A86ED5EF2C1742D0009E7A96 /* HomePageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A86ED5F32C174480009E7A96 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A86ED5F52C1744D7009E7A96 /* TextAndFontSizeView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A86ED5C92C172BDF009E7A96 /* ContentView.swift in Sources */,
+				A86ED5F62C1744D7009E7A96 /* TextAndFontSizeView.swift in Sources */,
+				A86ED5F02C1742D0009E7A96 /* HomePageView.swift in Sources */,
 				A86ED5C72C172BDF009E7A96 /* HotelBookingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
