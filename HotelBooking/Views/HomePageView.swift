@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomePageView: View {
+    @State private var selectedCategory:Category = .Hotel
     var body: some View {
         ScrollView{
             VStack{
@@ -31,6 +32,18 @@ struct HomePageView: View {
                         )
                     
                 }
+                .padding(.bottom,20)
+                ScrollView(.horizontal){
+                    HStack{
+                        ForEach(Category.allCases, id:\.self){category in
+                            CategoryCell(category: category, isSelected: category == selectedCategory)
+                                .onTapGesture {
+                                    selectedCategory = category
+                                }
+                        }
+                    }
+                }
+                .scrollIndicators(.hidden)
             }
         }
         .padding()
