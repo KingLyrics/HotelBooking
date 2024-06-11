@@ -9,17 +9,28 @@ import SwiftUI
 
 struct CardView: View {
     var body: some View {
-        
         VStack{
             Image(.property1)
                 .resizable()
                 .scaledToFit()
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .clipShape(.rect(
+                    topLeadingRadius:10,
+                    topTrailingRadius: 10
+                )
+                )
                 .frame(width: 257, height: 182)
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                Image(systemName: "heart")
-                    .offset(x:90, y:-165)
-            })
+                .overlay{
+                    Button(action: {}, label: {
+                        Image(.heart)
+                            .padding(6)
+                            .background(.white)
+                            .clipShape(Circle())
+                            .offset(x:90, y: -60)
+                    })
+                }
+            HStack{
+                TextAndFontSizeView(text: "The Aston Vill Hotel", size: 14, fontName: "Inter-Medium")
+            }
             
         }
     }
