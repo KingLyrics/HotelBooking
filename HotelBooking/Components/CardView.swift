@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     var body: some View {
-        VStack{
+        VStack(alignment:.leading){
             Image(.property1)
                 .resizable()
                 .scaledToFit()
@@ -30,9 +30,27 @@ struct CardView: View {
                 }
             HStack{
                 TextAndFontSizeView(text: "The Aston Vill Hotel", size: 14, fontName: "Inter-Medium")
+                Spacer()
+                HStack{
+                    Image(.star)
+                    TextAndFontSizeView(text: "5.0", size: 12, fontName: "Inter-Bold")
+                }
+                .padding(.trailing,10)
+                
             }
-            
+            VStack(alignment:.leading, spacing: 20){
+                TextAndFontSizeView(text: "Alice Springs NT 0870, Australia", size: 12, fontName: "Inter-Regular")
+                    .foregroundStyle(.lightG)
+                HStack(spacing:4){
+                    TextAndFontSizeView(text: "$200.7", size: 16, fontName: "Inter-Bold")
+                        .foregroundStyle(.purplishBlue)
+                    TextAndFontSizeView(text: "/night", size: 14, fontName: "Inter-Light")
+                        .foregroundStyle(.lightG)
+                }
+            }
         }
+        .padding()
+        .frame(width: 300)
     }
 }
 
