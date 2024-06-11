@@ -20,7 +20,7 @@ struct Location: Identifiable, Codable {
     var isFavorite: Bool = false
 }
 
-enum LocationFeatures: String, Codable {
+enum LocationFeatures: String, Codable, Identifiable {
     case freeWifi = "Free Wifi"
     case freeBreakfast = "Free Breakfast"
     
@@ -31,6 +31,10 @@ enum LocationFeatures: String, Codable {
         case .freeBreakfast:
             return "cup.and.saucer.fill"
         }
+    }
+    
+    var id:String{
+        return self.rawValue
     }
 }
 

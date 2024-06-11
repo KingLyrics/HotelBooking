@@ -54,7 +54,7 @@ struct HomePageView: View {
                     .padding(.top)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
+                        LazyHStack {
                             ForEach(allLocationListings){ location in
                                 CardView(location: location)
                             }
