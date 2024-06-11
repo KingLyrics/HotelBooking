@@ -32,29 +32,43 @@ struct CardView: View {
                             .offset(x:95, y: -60)
                     })
                 }
-            HStack{
-                TextAndFontSizeView(text: location.houseName, size: 14, fontName: "Inter-Medium")
-                Spacer()
+            VStack(alignment:.leading){
                 HStack{
-                    Image(.star)
-                    TextAndFontSizeView(text: location.rating, size: 12, fontName: "Inter-Bold")
+                    TextAndFontSizeView(text: location.houseName, size: 14, fontName: "Inter-Medium")
+                    Spacer()
+                    HStack{
+                        Image(.star)
+                        TextAndFontSizeView(text: location.rating, size: 12, fontName: "Inter-Bold")
+                    }
+                    .padding(.trailing,10)
+                    
                 }
-                .padding(.trailing,10)
-                
-            }
-            VStack(alignment:.leading, spacing: 20){
-                TextAndFontSizeView(text: location.locationName, size: 12, fontName: "Inter-Regular")
-                    .foregroundStyle(.lightG)
-                HStack(spacing:4){
-                    TextAndFontSizeView(text: "\(location.amount)", size: 16, fontName: "Inter-Bold")
-                        .foregroundStyle(.purplishBlue)
-                    TextAndFontSizeView(text: "/night", size: 14, fontName: "Inter-Light")
+                VStack(alignment:.leading, spacing: 20){
+                    TextAndFontSizeView(text: location.locationName, size: 12, fontName: "Inter-Regular")
                         .foregroundStyle(.lightG)
+                    HStack(spacing:4){
+                        TextAndFontSizeView(text: "\(location.amount)", size: 16, fontName: "Inter-Bold")
+                            .foregroundStyle(.purplishBlue)
+                        TextAndFontSizeView(text: "/night", size: 14, fontName: "Inter-Light")
+                            .foregroundStyle(.lightG)
+                    }
+                    
                 }
             }
+            .padding()
+            .background(Color.white)
+            .clipShape(.rect(
+                bottomLeadingRadius: 10,
+                bottomTrailingRadius: 10
+            ))
+            .offset(y:-14)
+            .shadow(radius: 5)
+         
         }
         .padding()
-        .frame(width: 300)
+        .frame(width: 289)
+       
+        
     }
 }
 

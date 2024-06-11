@@ -55,14 +55,18 @@ struct HomePageView: View {
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                           
+                            ForEach(allLocationListings){ location in
+                                CardView(location: location)
+                            }
                         }
                     }
                 }
                 
             }
+            .padding()
         }
-        .padding()
+      
+        
         
     }
 }
