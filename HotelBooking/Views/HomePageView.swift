@@ -44,6 +44,13 @@ struct HomePageView: View {
                     }
                 }
                 .scrollIndicators(.hidden)
+                HStack{
+                    TextAndFontSizeView(text: "Near Location", size: 16, fontName: "Inter-Medium")
+                    Spacer()
+                    TextAndFontSizeView(text: "See all", size: 14 , fontName: "Inter-Medium")
+                        .foregroundStyle(.purplishBlue)
+                }
+                .padding(.top)
             }
         }
         .padding()
