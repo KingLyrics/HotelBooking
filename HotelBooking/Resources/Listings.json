@@ -1,0 +1,29 @@
+[
+    {
+        "imageName": "Property1",
+        "houseName": "Seaside Villa",
+        "rating": "4.5",
+        "locationName": "California Coast",
+        "amount": "$250/night",
+        "description": "A beautiful seaside villa with stunning ocean views.",
+        "locationFeature": ["Free Wifi", "Free Breakfast"]
+    },
+    {
+        "imageName": "Property2",
+        "houseName": "Mountain Retreat",
+        "rating": "4.8",
+        "locationName": "Rocky Mountains",
+        "amount": "$300/night",
+        "description": "A cozy retreat in the heart of the Rocky Mountains.",
+        "locationFeature": ["Free Wifi"]
+    },
+    {
+        "imageName": "Property3",
+        "houseName": "City Apartment",
+        "rating": "4.2",
+        "locationName": "New York City",
+        "amount": "$180/night",
+        "description": "A modern apartment in the bustling city center.",
+        "locationFeature": ["Free Breakfast"]
+    }
+]

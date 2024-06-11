@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct CardView: View {
+    var location:Location
+    
     var body: some View {
         VStack(alignment:.leading){
-            Image(.property1)
+            Image(location.imageName)
                 .resizable()
                 .scaledToFit()
                 .clipShape(.rect(
@@ -20,29 +22,31 @@ struct CardView: View {
                 )
                 .frame(width: 257, height: 182)
                 .overlay{
-                    Button(action: {}, label: {
+                    Button(action: {
+                       
+                    }, label: {
                         Image(.heart)
                             .padding(6)
                             .background(.white)
                             .clipShape(Circle())
-                            .offset(x:90, y: -60)
+                            .offset(x:95, y: -60)
                     })
                 }
             HStack{
-                TextAndFontSizeView(text: "The Aston Vill Hotel", size: 14, fontName: "Inter-Medium")
+                TextAndFontSizeView(text: location.houseName, size: 14, fontName: "Inter-Medium")
                 Spacer()
                 HStack{
                     Image(.star)
-                    TextAndFontSizeView(text: "5.0", size: 12, fontName: "Inter-Bold")
+                    TextAndFontSizeView(text: location.rating, size: 12, fontName: "Inter-Bold")
                 }
                 .padding(.trailing,10)
                 
             }
             VStack(alignment:.leading, spacing: 20){
-                TextAndFontSizeView(text: "Alice Springs NT 0870, Australia", size: 12, fontName: "Inter-Regular")
+                TextAndFontSizeView(text: location.locationName, size: 12, fontName: "Inter-Regular")
                     .foregroundStyle(.lightG)
                 HStack(spacing:4){
-                    TextAndFontSizeView(text: "$200.7", size: 16, fontName: "Inter-Bold")
+                    TextAndFontSizeView(text: "\(location.amount)", size: 16, fontName: "Inter-Bold")
                         .foregroundStyle(.purplishBlue)
                     TextAndFontSizeView(text: "/night", size: 14, fontName: "Inter-Light")
                         .foregroundStyle(.lightG)
@@ -55,5 +59,9 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView()
+    Group{
+        CardView(location:allLocationListings[0])
+        CardView(location:allLocationListings[2])
+
+    }
 }

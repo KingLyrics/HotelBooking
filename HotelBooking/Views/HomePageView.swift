@@ -52,13 +52,21 @@ struct HomePageView: View {
                             .foregroundStyle(.purplishBlue)
                     }
                     .padding(.top)
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                           
+                        }
+                    }
                 }
+                
             }
-            .padding()
-           
         }
+        .padding()
+        
     }
 }
+
 
 
 #Preview {
