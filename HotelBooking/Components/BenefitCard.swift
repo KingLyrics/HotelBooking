@@ -15,11 +15,11 @@ struct BenefitCard: View {
         HStack{
             Image(systemName:
                     imageName)
-            TextAndFontSizeView(text: text, size: 12, fontName: "Inter-Medium")
+            TextAndFontSizeView(text: text, size: 11, fontName: "Inter-Medium")
         }
         .padding(4)
-        .frame(minWidth: 101, minHeight: 36)
         .clipShape(RoundedRectangle(cornerRadius: 10))
+        .frame(minWidth: 100, minHeight: 36)
         .background(Color.lighterG)
     }
 }
