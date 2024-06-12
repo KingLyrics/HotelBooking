@@ -12,7 +12,6 @@ struct HomePageView: View {
     var body: some View {
         NavigationStack{
         ScrollView{
-              
                     VStack{
                         HStack{
                             VStack(alignment:.leading){

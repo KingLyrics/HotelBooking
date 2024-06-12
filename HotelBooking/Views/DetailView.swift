@@ -32,7 +32,7 @@ struct DetailView: View {
                         }
                     VStack(alignment: .leading){
                         
-                        HStack(spacing:10){
+                        HStack(spacing:20){
                             ForEach(location.locationFeature){ feature in
                                 BenefitCard(imageName: feature.imageName, text: feature.rawValue)
                             }
@@ -98,20 +98,20 @@ struct DetailView: View {
                                         .frame(width: 326, height: 56)
                                         .background(Color.purplishBlue)
                                         .clipShape(RoundedRectangle(cornerRadius: 10))
+                                        .padding(.bottom,20)
                                 })
-                                
+                            
                             }
                             .padding(.horizontal,20)
                         }
                         .padding(.top,30)
                         
                     }
-                    .padding(.horizontal,10)
                     .navigationTitle("Detail")
                     .navigationBarTitleDisplayMode(.inline)
                     
                 }
-                .padding(.horizontal,10)
+                .padding(.horizontal,20)
             }
         }
     }

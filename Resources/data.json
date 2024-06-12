@@ -8,7 +8,7 @@
     "amount": "$250",
     "description": "A beautiful seaside villa with stunning ocean views. It clings to the rugged cliffs of Oia, Santorini, a postcard-perfect village known for its whitewashed houses cascading down the hillside. Gaze out from your private sanctuary, and the endless blue of the Aegean Sea stretches before you, punctuated by volcanic islands and dramatic rock formations.",
     "locationFeature": ["Free Wifi", "Free Breakfast"],
-    "isFavorite": false
+    "isFavorite": false,
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "amount": "$300",
     "description": "A cozy retreat in the heart of the Rocky Mountains.",
     "locationFeature": ["Free Wifi"],
-    "isFavorite": false
+    "isFavorite": false,
   },
   {
     "id": 3,
@@ -30,7 +30,8 @@
     "amount": "$180",
     "description": "A modern apartment in the bustling city center.",
     "locationFeature": ["Free Breakfast"],
-    "isFavorite": false
+    "isFavorite": false,
+    
   },
   {
     "id": 4,
