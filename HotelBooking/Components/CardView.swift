@@ -35,10 +35,12 @@ struct CardView: View {
             VStack(alignment:.leading){
                 HStack{
                     TextAndFontSizeView(text: location.houseName, size: 14, fontName: "Inter-Medium")
+                        .foregroundStyle(.midnight)
                     Spacer()
                     HStack{
                         Image(.star)
                         TextAndFontSizeView(text: location.rating, size: 12, fontName: "Inter-Bold")
+                            .foregroundStyle(.midnight)
                     }
                     .padding(.trailing,10)
                     
