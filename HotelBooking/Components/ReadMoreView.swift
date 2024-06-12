@@ -56,10 +56,12 @@ struct ReadMoreView: View {
                 }, label: {
                     Text(readMoreText)
                         .font(.custom("Inter-Bold", size: 14))
+                        .foregroundStyle(.purplishBlue)
                 })
             }
         }
         .font(.custom("Inter-Regular", size: 16))
+        .foregroundStyle(.lightG)
     }
 }
 

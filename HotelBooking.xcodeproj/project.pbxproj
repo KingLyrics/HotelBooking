@@ -31,6 +31,7 @@
 		A86ED6292C18BCB4009E7A96 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86ED6282C18BCB4009E7A96 /* DetailView.swift */; };
 		A86ED62B2C18C69F009E7A96 /* BenefitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86ED62A2C18C69F009E7A96 /* BenefitCard.swift */; };
 		A86ED62D2C195894009E7A96 /* ReadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86ED62C2C195894009E7A96 /* ReadMoreView.swift */; };
+		A86ED62F2C19E179009E7A96 /* PreviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86ED62E2C19E179009E7A96 /* PreviewCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		A86ED6282C18BCB4009E7A96 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A86ED62A2C18C69F009E7A96 /* BenefitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitCard.swift; sourceTree = "<group>"; };
 		A86ED62C2C195894009E7A96 /* ReadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMoreView.swift; sourceTree = "<group>"; };
+		A86ED62E2C19E179009E7A96 /* PreviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +78,9 @@
 		A86ED5BA2C172BDF009E7A96 = {
 			isa = PBXGroup;
 			children = (
-				A86ED6242C18B5C7009E7A96 /* data.json */,
 				A86ED5C52C172BDF009E7A96 /* HotelBooking */,
 				A86ED5C42C172BDF009E7A96 /* Products */,
+				A86ED6302C19E21B009E7A96 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +165,7 @@
 				A86ED5FE2C1824DC009E7A96 /* CardView.swift */,
 				A86ED62A2C18C69F009E7A96 /* BenefitCard.swift */,
 				A86ED62C2C195894009E7A96 /* ReadMoreView.swift */,
+				A86ED62E2C19E179009E7A96 /* PreviewCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -175,6 +178,14 @@
 				A86ED6202C189731009E7A96 /* ModelData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A86ED6302C19E21B009E7A96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A86ED6242C18B5C7009E7A96 /* data.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				A86ED5FF2C1824DC009E7A96 /* CardView.swift in Sources */,
 				A86ED5C92C172BDF009E7A96 /* ContentView.swift in Sources */,
+				A86ED62F2C19E179009E7A96 /* PreviewCard.swift in Sources */,
 				A86ED6212C189731009E7A96 /* ModelData.swift in Sources */,
 				A86ED6292C18BCB4009E7A96 /* DetailView.swift in Sources */,
 				A86ED6052C1852D5009E7A96 /* Location.swift in Sources */,
