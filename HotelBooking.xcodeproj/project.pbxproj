@@ -30,6 +30,7 @@
 		A86ED6252C18B5C7009E7A96 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A86ED6242C18B5C7009E7A96 /* data.json */; };
 		A86ED6292C18BCB4009E7A96 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86ED6282C18BCB4009E7A96 /* DetailView.swift */; };
 		A86ED62B2C18C69F009E7A96 /* BenefitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86ED62A2C18C69F009E7A96 /* BenefitCard.swift */; };
+		A86ED62D2C195894009E7A96 /* ReadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86ED62C2C195894009E7A96 /* ReadMoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		A86ED6242C18B5C7009E7A96 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		A86ED6282C18BCB4009E7A96 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A86ED62A2C18C69F009E7A96 /* BenefitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitCard.swift; sourceTree = "<group>"; };
+		A86ED62C2C195894009E7A96 /* ReadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				A86ED5F72C177FFF009E7A96 /* CategoryCell.swift */,
 				A86ED5FE2C1824DC009E7A96 /* CardView.swift */,
 				A86ED62A2C18C69F009E7A96 /* BenefitCard.swift */,
+				A86ED62C2C195894009E7A96 /* ReadMoreView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				A86ED6052C1852D5009E7A96 /* Location.swift in Sources */,
 				A86ED5F62C1744D7009E7A96 /* TextAndFontSizeView.swift in Sources */,
 				A86ED5F02C1742D0009E7A96 /* HomePageView.swift in Sources */,
+				A86ED62D2C195894009E7A96 /* ReadMoreView.swift in Sources */,
 				A86ED62B2C18C69F009E7A96 /* BenefitCard.swift in Sources */,
 				A86ED5C72C172BDF009E7A96 /* HotelBookingApp.swift in Sources */,
 				A86ED5F82C177FFF009E7A96 /* CategoryCell.swift in Sources */,

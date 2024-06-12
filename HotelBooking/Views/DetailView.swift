@@ -13,7 +13,6 @@ struct DetailView: View {
     var body: some View {
         NavigationStack{
             VStack{
-                
                     Image(location.imageName)
                         .resizable()
                         .scaledToFit()
